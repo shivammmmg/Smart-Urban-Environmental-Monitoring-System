@@ -35,7 +35,7 @@ To design and implement a smart system that monitors key urban environmental par
 
 ## 🧰 Hardware Setup
 <p align="center">
-  <img src="images/setup.jpg" width="600">
+  <img src="images/setup.png" width="600">
   <br>
   <em>Figure 1: Full setup with Grove kit, sensors, and laptop interface.</em>
 </p>
