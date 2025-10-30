@@ -25,11 +25,20 @@ To design and implement a smart system that monitors key urban environmental par
 |------------|-------------|
 | **Grove Light Sensor** | Measures ambient light levels |
 | **Grove Sound Sensor** | Detects noise intensity |
-| **Grove Temperature & Humidity Sensor** | Monitors environment conditions |
+| **Grove Temperature & Humidity Sensor** | Monitors environmental conditions |
 | **Grove Pressure Sensor** | Measures atmospheric pressure |
 | **LEDs** | Provide visual output indicators |
 | **Arduino UNO (Grove Kit)** | Central microcontroller |
 | **Laptop (Arduino IDE + IntelliJ)** | Software processing and visualization |
+
+---
+
+## 🧰 Hardware Setup
+<p align="center">
+  <img src="images/setup.jpg" width="600">
+  <br>
+  <em>Figure 1: Full setup with Grove kit, sensors, and laptop interface.</em>
+</p>
 
 ---
 
@@ -42,7 +51,7 @@ To design and implement a smart system that monitors key urban environmental par
 
 **Key Files**
 | File | Description |
-|------|-------------|
+|------|--------------|
 | `Main.java` | Main class controlling sound and light sensors |
 | `SoundSensor.java` | Reads data from the sound sensor |
 | `LightSensor.java` | Reads data from the light sensor |
@@ -55,16 +64,48 @@ To design and implement a smart system that monitors key urban environmental par
 
 ---
 
-## 📈 Sample Outputs
+## 🧩 System Flowcharts
+<p align="center">
+  <img src="images/sound_flowchart.png" width="45%">
+  <img src="images/light_flowchart.png" width="45%">
+</p>
+<p align="center">
+  <img src="images/temp_humidity_flowchart.png" width="45%">
+  <img src="images/pressure_flowchart.png" width="45%">
+</p>
+<em>Figure 2: Flowcharts showing event-driven logic for each sensor module.</em>
 
-### 🔊 Sound Intensity Graph
-Displays fluctuating sound levels and triggers alerts above defined thresholds.
+---
 
-### 💡 Light Intensity Graph
-Shows ambient light variations and toggles LED status accordingly.
+## 📊 Sensor Data Graphs
 
-### 🌡️ Temperature & Humidity Graph
-Plots live sensor readings for temperature and humidity using JFreeChart.
+### 🔊 Sound Intensity
+<p align="center">
+  <img src="images/sound_graph.png" width="600">
+  <br>
+  <em>Figure 3: Real-time sound level graph with threshold alerts.</em>
+</p>
+
+### 💡 Light Intensity
+<p align="center">
+  <img src="images/light_graph.png" width="600">
+  <br>
+  <em>Figure 4: Light intensity graph with LED activation feedback.</em>
+</p>
+
+### 🌡️ Temperature & Humidity
+<p align="center">
+  <img src="images/temp_humidity_graph.png" width="600">
+  <br>
+  <em>Figure 5: Temperature and humidity readings visualized in JFreeChart.</em>
+</p>
+
+### 🌬️ Pressure Sensor
+<p align="center">
+  <img src="images/pressure_graph.png" width="600">
+  <br>
+  <em>Figure 6: Pressure and temperature correlation graph.</em>
+</p>
 
 ---
 
@@ -72,14 +113,6 @@ Plots live sensor readings for temperature and humidity using JFreeChart.
 - Verified sensor readings against known references  
 - Simulated sound and light changes for alert validation  
 - Ensured accurate data refresh in real-time graph displays  
-
----
-
-## 🚀 Future Enhancements
-- Add **air quality sensors** for pollution monitoring  
-- Display data on a **web dashboard or mobile app**  
-- Enable **IoT-based data sharing** via cloud integration  
-- Use pressure data to calculate **altitude and weather trends**
 
 ---
 
